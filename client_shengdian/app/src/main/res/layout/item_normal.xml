@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    style="@style/MatchWrap.Vertical"
+    android:background="@drawable/sharp"
+    android:padding="8dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_event_illustration"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        fresco:placeholderImage="@drawable/my_drawable"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_normal_title"
+        style="@style/MatchWrap"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_item_normal_detail"
+        style="@style/MatchWrap"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="详细内容"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+</LinearLayout>
