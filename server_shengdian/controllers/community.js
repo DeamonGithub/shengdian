@@ -8,7 +8,7 @@ var Joi = require("joi");
 var Code = require("../models").code;
 var fs = require("fs");
 
-//���������Ϣ
+//获取社团信息
 var getCommunityInfo = function(req, res, next) {
     console.log("#######");
     console.log("getCommunityInfo");
@@ -48,11 +48,12 @@ var getCommunityInfo = function(req, res, next) {
                     for(var i in activities){
                         var item = {};
                         item.aid = activities[i]._id;
-                        item.detail = activities[i].detail;
-                        item.time = activities[i].time;
-                        item.name = activities[i].name;
+                        item.title = activities[i].name;
+                        item.start_at = activities[i].time.start_at;
+                        item.end_at = activities[i].time.end_at;
                         item.site = activities[i].site;
-                        item.avatar_url = activities[i].avatar_url;
+                        item.cname = activities[i].community.cname;
+                        item.illustration = activities[i].avatar_url;
                         activityArray.push(item);
                     }
                 }
@@ -68,8 +69,8 @@ var getCommunityInfo = function(req, res, next) {
                         for(var i in users){
                             var item = {};
                             item.sid = users[i]._id;
-                            item.name = users[i].nickname;
-                            item.avatar_url = users[i].avatar_url;
+                            item.nickname = users[i].nickname;
+                            item.avatar = users[i].avatar_url;
                             item.sex = users[i].sex;
                             userArray.push(item);
                         }
@@ -83,19 +84,19 @@ var getCommunityInfo = function(req, res, next) {
                         member_count: community.member_count,
                         avatar_url: community.avatar_url,
                         school: community.school,
-                        member : userArray,
+                        members : userArray,
                         activities : activityArray
                     };
                     console.log(data);
                     console.log("flag 0");
-                    sendData(200, res, next, data)
+                    sendData(200, res, next, [data])
                 });
             });
         });
     });
 };
 
-//�����������
+//查询社团列表
 var getCommunities = function(req, res, next){
     console.log("#######");
     console.log("community getCommunities");
@@ -114,18 +115,18 @@ var getCommunities = function(req, res, next){
             sendError(404, res, next, "getCommunities", "there is nothing on the db");
             return next();
         }
-        var result = {data: []};
+        var data = [];
         for(var i = 0; i < communities.length; i++){
             var item = {};
-            item.c_name = communities[i].name;
+            item.cname = communities[i].name;
             item.cid = communities[i]._id;
             item.profile = communities[i].profile;
-            item.avatar_url = communities[i].avatar_url;
-            result.data.push(item);
+            item.avatar = communities[i].avatar_url;
+            data.push(item);
         }
-        console.log(result);
+        console.log(data);
         console.log("flag 0");
-        sendData(200, res, next, result);
+        sendData(200, res, next, data);
     })
 };
 
@@ -388,6 +389,7 @@ var validateCode = function(req, res, next){
     });
 };*/
 
+//上传头像图片
 var uploadPicture = function(req, res, next){
     console.log("#######");
     console.log("activity uploadPicture");
@@ -428,7 +430,7 @@ var uploadPicture = function(req, res, next){
                         return next();
                     }
                     console.log("flag 0");
-                    sendData(200, res, next, {url : url})
+                    sendData(200, res, next, {result : 0, url : url})
                 });
             });
         });

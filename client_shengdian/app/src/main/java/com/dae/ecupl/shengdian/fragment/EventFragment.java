@@ -4,17 +4,12 @@ import android.content.Intent;
 import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,10 +20,9 @@ import com.bumptech.glide.Glide;
 import com.dae.ecupl.shengdian.App;
 import com.dae.ecupl.shengdian.R;
 import com.dae.ecupl.shengdian.activities.EventDetailActivity;
-import com.dae.ecupl.shengdian.activities.MainActivity;
 import com.dae.ecupl.shengdian.engines.Engine;
 import com.dae.ecupl.shengdian.models.BannerModel;
-import com.dae.ecupl.shengdian.models.RefreshModel;
+import com.dae.ecupl.shengdian.models.EventModel;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.ArrayList;
@@ -188,18 +182,20 @@ public class EventFragment extends Fragment implements SwipeRefreshLayout.OnRefr
      */
     private void loadContentData() {
         Log.d(TAG, "loadContentData: called");
-        mEngine.loadContentData("http://106.14.250.168/api/activity/list").enqueue(new Callback<List<RefreshModel>>() {
+        mEngine.loadContentData("http://106.14.250.168/api/activity/list").enqueue(new Callback<List<EventModel>>() {
             @Override
-            public void onResponse(Call<List<RefreshModel>> call, Response<List<RefreshModel>> response) {
-                List<RefreshModel> list = response.body();
-                for(RefreshModel r : list){
-                    aidArray.add(r.aid);
+            public void onResponse(Call<List<EventModel>> call, Response<List<EventModel>> response) {
+                List<EventModel> list = response.body();
+                if(list != null){
+                    for(EventModel e : list){
+                        aidArray.add(e.aid);
+                    }
                 }
                 mContentAdapter.setData(response.body());
             }
 
             @Override
-            public void onFailure(Call<List<RefreshModel>> call, Throwable t) {
+            public void onFailure(Call<List<EventModel>> call, Throwable t) {
                 Toast.makeText(App.getInstance(), "加载内容数据失败", Toast.LENGTH_SHORT).show();
             }
         });
@@ -239,14 +235,14 @@ public class EventFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     }
 
 
-    private class ContentAdapter extends BGARecyclerViewAdapter<RefreshModel> {
+    private class ContentAdapter extends BGARecyclerViewAdapter<EventModel> {
 
         public ContentAdapter(RecyclerView recyclerView) {
             super(recyclerView, R.layout.item_normal);
         }
 
         @Override
-        protected void fillData(BGAViewHolderHelper helper, int position, RefreshModel model) {
+        protected void fillData(BGAViewHolderHelper helper, int position, EventModel model) {
             helper.setText(R.id.tv_item_normal_title, model.title).setText(R.id.tv_item_normal_detail, model.site);
             if(model.illustration != null){
                 Uri uri = Uri.parse(model.illustration);

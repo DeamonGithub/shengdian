@@ -7,10 +7,13 @@ package com.dae.ecupl.shengdian.engines;
 import java.util.List;
 
 import com.dae.ecupl.shengdian.models.BannerModel;
-import com.dae.ecupl.shengdian.models.RefreshModel;
+import com.dae.ecupl.shengdian.models.CmuInfo;
+import com.dae.ecupl.shengdian.models.CmuList;
+import com.dae.ecupl.shengdian.models.EventModel;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 import retrofit2.http.Url;
 
 
@@ -21,11 +24,17 @@ import retrofit2.http.Url;
  */
 public interface Engine {
 
-    @GET("{itemCount}item.json")
+    @GET("http://7xk9dj.com1.z0.glb.clouddn.com/banner/api/{itemCount}item.json")
     Call<BannerModel> fetchItemsWithItemCount(@Path("itemCount") int itemCount);
 
     @GET
-    Call<List<RefreshModel>> loadContentData(@Url String url);
+    Call<List<EventModel>> loadContentData(@Url String url);
+
+    @GET("/api/community/list")
+    Call<List<CmuList>> loadComunitiesList();
+
+    @GET("/api/community/info")
+    Call<List<CmuInfo>> loadCommunityInfo(@Query("cid") String cid);
 
     @GET("")
     Call<BannerModel> bannerData();

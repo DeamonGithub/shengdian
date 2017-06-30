@@ -15,7 +15,7 @@ var UserSchema = new Schema({
     feeling: {type: String}, //个性签名
     password : { type : String }, //密码
     sid :{type : String },
-    snum : {type : String}, //
+    snum : {type : String}, //学号
     avatar_url: {type: String, default: "/avatar/user/default_avatar.jpg"}, //头像
     email : {type : String}, //邮箱
     phone : {type : String}, //手机号

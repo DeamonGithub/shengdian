@@ -7,25 +7,25 @@ var db = require("./db");
 var Schema = mongoose.Schema;
 // define a schema
 var communitySchema = new Schema({
-    //cid£¬
-    name : {type: String }, //ÉçÍÅÃû³Æ£¬
+    //cidï¿½ï¿½
+    name : {type: String }, //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½
     /*member : [{
         name : {type : String},
         id : {type : String} //todo
-    }], // ³ÉÔ±£¬
+    }], // ï¿½ï¿½Ô±ï¿½ï¿½
     activities : [{
         name : {type : String},
         id : {type : String}
-    }], // ÉçÍÅ»î¶¯£¬*/
+    }], // ï¿½ï¿½ï¿½Å»î¶¯ï¿½ï¿½*/
     avatar_url: {type: String, default: "/avatar/community/default_avatar.jpg"},
     school: {type: String},//Ñ§Ð£
-    signup_at: {type: Date}, //³ÉÁ¢Ê±¼ä
-    member_count : {type: Number, default: 1},//ÉçÍÅÈËÊý, Ä¬ÈÏ×îÉÙ³ÉÔ±ÎªÉç³¤1ÈË
-    star: {type: Number, default: 1}, //ÐÇ¼¶£¬ 1-5ÐÇ
-    profile: {type: String}, //ÉçÍÅ¼ò½é
-    lock: {type: Boolean, default: false},//¶³½á×´Ì¬
-    create_at : {type: Date, default : Date.now()+8*60*60*1000},// ÉÏÏßÊ±¼ä
-    is_delete: {type: Boolean, default: false} //É¾³ý×´Ì¬
+    signup_at: {type: Date}, //ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+    member_count : {type: Number, default: 1},//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Ù³ï¿½Ô±Îªï¿½ç³¤1ï¿½ï¿½
+    star: {type: Number, default: 1}, //ï¿½Ç¼ï¿½ï¿½ï¿½ 1-5ï¿½ï¿½
+    profile: {type: String}, //ï¿½ï¿½ï¿½Å¼ï¿½ï¿½
+    lock: {type: Boolean, default: false},//ï¿½ï¿½ï¿½ï¿½×´Ì¬
+    create_at : {type: Date, default : Date.now()+8*60*60*1000},// ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+    is_delete: {type: Boolean, default: false} //É¾ï¿½ï¿½×´Ì¬
 });
 
 communitySchema.index({ name : 1});

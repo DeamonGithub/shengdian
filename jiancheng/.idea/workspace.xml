@@ -32,49 +32,49 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="G:/github/shengdian/jiancheng/index.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/test.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/testformoment.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/callback.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/testforsort.js" />
-        <option value="G:/github/shengdian/jiancheng/config/javascript.js" />
-        <option value="G:/github/shengdian/jiancheng/config/user.js" />
-        <option value="G:/github/shengdian/jiancheng/tools/cookie.js" />
-        <option value="G:/github/shengdian/jiancheng/test/testforJSON.js" />
-        <option value="G:/github/shengdian/jiancheng/test/testforRedis.js" />
-        <option value="G:/github/shengdian/jiancheng/test/md5.js" />
-        <option value="G:/github/shengdian/jiancheng/tools/cookies.js" />
-        <option value="G:/github/shengdian/jiancheng/tools/md5.js" />
-        <option value="G:/github/shengdian/jiancheng/tools/invitation_code.js" />
-        <option value="G:/github/shengdian/jiancheng/models/invitation_code.js" />
-        <option value="G:/github/shengdian/jiancheng/models/admin.js" />
-        <option value="G:/github/shengdian/jiancheng/test/bibao.js" />
-        <option value="G:/github/shengdian/jiancheng/test/Lodashtest.js" />
-        <option value="G:/github/shengdian/jiancheng/routers/community.js" />
-        <option value="G:/github/shengdian/jiancheng/models/community.js" />
-        <option value="G:/github/shengdian/jiancheng/routers/admin.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/community.js" />
-        <option value="G:/github/shengdian/jiancheng/models/user.js" />
-        <option value="G:/github/shengdian/jiancheng/models/library.js" />
-        <option value="G:/github/shengdian/jiancheng/models/library_data.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/index.js" />
-        <option value="G:/github/shengdian/jiancheng/routers/book.js" />
-        <option value="G:/github/shengdian/jiancheng/routers/index.js" />
-        <option value="G:/github/shengdian/jiancheng/routers/user.js" />
-        <option value="G:/github/shengdian/jiancheng/models/db.js" />
-        <option value="G:/github/shengdian/jiancheng/models/library_datas.js" />
-        <option value="G:/github/shengdian/jiancheng/models/activity.js" />
-        <option value="G:/github/shengdian/jiancheng/models/test.js" />
-        <option value="G:/github/shengdian/jiancheng/routers/activity.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/book.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/admin.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/user.js" />
-        <option value="G:/github/shengdian/jiancheng/tools/sessions.js" />
-        <option value="G:/github/shengdian/jiancheng/models/index.js" />
-        <option value="G:/github/shengdian/jiancheng/models/advertisement.js" />
-        <option value="G:/github/shengdian/jiancheng/tools/send.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/advertisement.js" />
-        <option value="G:/github/shengdian/jiancheng/controllers/activity.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/controllers/test.js" />
+        <option value="$PROJECT_DIR$/controllers/testformoment.js" />
+        <option value="$PROJECT_DIR$/controllers/callback.js" />
+        <option value="$PROJECT_DIR$/controllers/testforsort.js" />
+        <option value="$PROJECT_DIR$/config/javascript.js" />
+        <option value="$PROJECT_DIR$/config/user.js" />
+        <option value="$PROJECT_DIR$/tools/cookie.js" />
+        <option value="$PROJECT_DIR$/test/testforJSON.js" />
+        <option value="$PROJECT_DIR$/test/testforRedis.js" />
+        <option value="$PROJECT_DIR$/test/md5.js" />
+        <option value="$PROJECT_DIR$/tools/cookies.js" />
+        <option value="$PROJECT_DIR$/tools/md5.js" />
+        <option value="$PROJECT_DIR$/tools/invitation_code.js" />
+        <option value="$PROJECT_DIR$/models/invitation_code.js" />
+        <option value="$PROJECT_DIR$/models/admin.js" />
+        <option value="$PROJECT_DIR$/test/bibao.js" />
+        <option value="$PROJECT_DIR$/test/Lodashtest.js" />
+        <option value="$PROJECT_DIR$/routers/community.js" />
+        <option value="$PROJECT_DIR$/models/community.js" />
+        <option value="$PROJECT_DIR$/routers/admin.js" />
+        <option value="$PROJECT_DIR$/controllers/community.js" />
+        <option value="$PROJECT_DIR$/models/user.js" />
+        <option value="$PROJECT_DIR$/models/library.js" />
+        <option value="$PROJECT_DIR$/models/library_data.js" />
+        <option value="$PROJECT_DIR$/controllers/index.js" />
+        <option value="$PROJECT_DIR$/routers/book.js" />
+        <option value="$PROJECT_DIR$/routers/index.js" />
+        <option value="$PROJECT_DIR$/routers/user.js" />
+        <option value="$PROJECT_DIR$/models/db.js" />
+        <option value="$PROJECT_DIR$/models/library_datas.js" />
+        <option value="$PROJECT_DIR$/models/activity.js" />
+        <option value="$PROJECT_DIR$/models/test.js" />
+        <option value="$PROJECT_DIR$/routers/activity.js" />
+        <option value="$PROJECT_DIR$/controllers/book.js" />
+        <option value="$PROJECT_DIR$/controllers/admin.js" />
+        <option value="$PROJECT_DIR$/controllers/user.js" />
+        <option value="$PROJECT_DIR$/tools/sessions.js" />
+        <option value="$PROJECT_DIR$/models/index.js" />
+        <option value="$PROJECT_DIR$/models/advertisement.js" />
+        <option value="$PROJECT_DIR$/tools/send.js" />
+        <option value="$PROJECT_DIR$/controllers/advertisement.js" />
+        <option value="$PROJECT_DIR$/controllers/activity.js" />
       </list>
     </option>
   </component>
@@ -86,8 +86,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="633" />
-    <option name="y" value="1096" />
+    <option name="x" value="654" />
+    <option name="y" value="1138" />
     <option name="width" value="1167" />
     <option name="height" value="728" />
   </component>
@@ -117,7 +117,14 @@
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jiancheng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -126,7 +133,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="G:/github/shengdian/server_shengdian" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
   </component>
@@ -141,7 +148,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.user.js">
-    <configuration default="false" name="user.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="D:/Bugbank/webstorm/node" path-to-js-file="user.js" working-dir="G:/github/shengdian/jiancheng/controllers">
+    <configuration default="false" name="user.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="D:/Bugbank/webstorm/node" path-to-js-file="user.js" working-dir="$PROJECT_DIR$/controllers">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -214,28 +221,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="633" y="1096" width="1167" height="728" extended-state="0" />
+    <frame x="654" y="1138" width="1167" height="728" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19150858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19512194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1356784" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.110929854" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11255411" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6655329" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.110929854" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1356784" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

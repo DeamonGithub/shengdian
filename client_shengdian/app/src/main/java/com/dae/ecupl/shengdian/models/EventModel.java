@@ -5,6 +5,7 @@ package com.dae.ecupl.shengdian.models;
  */
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -13,12 +14,16 @@ import java.util.Date;
  * 创建时间:15/5/21 14:53
  * 描述:
  */
-public class RefreshModel {
+public class EventModel implements Serializable {
     public String aid;
     public String title;
     public String start_at;
     public String end_at;
     public String site;
+    public String cname;
+    public String create_at;
+    public String illustration;
+
 
     public String getAid() {
         return aid;
@@ -84,16 +89,25 @@ public class RefreshModel {
         this.illustration = illustration;
     }
 
-    public String cname;
-    public String create_at;
-    public String illustration;
 
-
-
-    public RefreshModel() {
+    @Override
+    public String toString() {
+        return "EventModel{" +
+                "aid='" + aid + '\'' +
+                ", title='" + title + '\'' +
+                ", start_at='" + start_at + '\'' +
+                ", end_at='" + end_at + '\'' +
+                ", site='" + site + '\'' +
+                ", cname='" + cname + '\'' +
+                ", create_at='" + create_at + '\'' +
+                ", illustration='" + illustration + '\'' +
+                '}';
     }
 
-    public RefreshModel(String aid, String title, String start_at, String end_at, String site, String cname, String create_at) {
+    public EventModel() {
+    }
+
+    public EventModel(String aid, String title, String start_at, String end_at, String site, String cname, String create_at) {
         this.aid = aid;
         this.title = title;
         this.start_at = start_at;
@@ -103,7 +117,7 @@ public class RefreshModel {
         this.create_at = create_at;
     }
 
-    public RefreshModel(String aid, String title, String start_at, String end_at, String site, String cname, String create_at, String illustration) {
+    public EventModel(String aid, String title, String start_at, String end_at, String site, String cname, String create_at, String illustration) {
         this.aid = aid;
         this.title = title;
         this.start_at = start_at;
@@ -114,13 +128,6 @@ public class RefreshModel {
         this.illustration = illustration;
     }
 
-    /*@Override
-    public String toString(){
-        return *//*"aid: " + aid + "\n"+
-                "title" + title + "\n" +
-                "site" + site + "\n" +
-                "cname" + cname + "\n" +
-                "time" + start_at + "\n" +*//*
-                "illustration" + illustration + "\n";
-    }*/
+
+
 }

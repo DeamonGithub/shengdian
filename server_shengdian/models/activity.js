@@ -21,6 +21,7 @@ var activitySchema = new Schema({
     picture: [{
         url: {type: String}
     }], //图片
+    avatar_url: {type: String, default: "/activity/default.jpg"},
     site: {type: String},// 活动地点
     detail: {type: String},// 活动内容
     lock: {type: Boolean, default: false},// 状态锁

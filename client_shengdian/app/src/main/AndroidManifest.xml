@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.EventDetailActivity"/>
+        <activity android:name=".activities.CommunityActivity"/>
 
     </application>
 

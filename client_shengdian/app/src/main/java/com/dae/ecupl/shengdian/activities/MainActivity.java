@@ -1,8 +1,6 @@
 package com.dae.ecupl.shengdian.activities;
 
-import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -10,19 +8,11 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.Toast;
-
-import com.bumptech.glide.Glide;
-import com.dae.ecupl.shengdian.App;
 
 import com.dae.ecupl.shengdian.R;
 import com.dae.ecupl.shengdian.adapter.HomePagerAdapter;
@@ -30,19 +20,8 @@ import com.dae.ecupl.shengdian.engines.Engine;
 import com.dae.ecupl.shengdian.fragment.CommunityFragment;
 import com.dae.ecupl.shengdian.fragment.EventFragment;
 import com.dae.ecupl.shengdian.fragment.TidingsFragment;
-import com.dae.ecupl.shengdian.models.BannerModel;
-import com.dae.ecupl.shengdian.models.RefreshModel;
 
-import java.util.List;
-
-import cn.bingoogolapple.androidcommon.adapter.BGAOnRVItemClickListener;
-import cn.bingoogolapple.androidcommon.adapter.BGARecyclerViewAdapter;
-import cn.bingoogolapple.androidcommon.adapter.BGAViewHolderHelper;
 import cn.bingoogolapple.bgabanner.BGABanner;
-import cn.bingoogolapple.bgabanner.BGABannerUtil;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
