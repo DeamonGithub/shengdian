@@ -6,12 +6,18 @@ package com.dae.ecupl.shengdian.engines;
 
 import java.util.List;
 
+import com.dae.ecupl.shengdian.models.Auth;
 import com.dae.ecupl.shengdian.models.BannerModel;
 import com.dae.ecupl.shengdian.models.CmuInfo;
 import com.dae.ecupl.shengdian.models.CmuList;
 import com.dae.ecupl.shengdian.models.EventModel;
+import com.dae.ecupl.shengdian.models.UserModel;
+import com.dae.ecupl.shengdian.models.Video;
+
 import retrofit2.Call;
+import retrofit2.http.Field;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 import retrofit2.http.Url;
@@ -38,4 +44,12 @@ public interface Engine {
 
     @GET("")
     Call<BannerModel> bannerData();
+
+    @POST("api/user/login")
+    Call<Auth> loginAuth(@Field("name") String name, @Field("password") String password);
+
+    @POST("api/community/video/list")
+    Call<List<Video>> loadVideoList(@Field("cid") String cid);
+
+
 }

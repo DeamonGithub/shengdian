@@ -10,6 +10,7 @@ var admin = require("./admin");
 var library = require("./library_datas");
 var mclass = require("./mclass");
 var advertisement = require("./advertisement");
+var video = require("./video");
 
 module.exports = {
     user : user,
@@ -20,5 +21,6 @@ module.exports = {
     admin: admin,
     library: library,
     mclass : mclass,
-    advertisement:advertisement
+    advertisement:advertisement,
+    video: video
 };

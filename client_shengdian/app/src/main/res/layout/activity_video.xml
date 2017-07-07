@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.dae.ecupl.shengdian.widget.media.IjkVideoView
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:id="@+id/video_view" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_follow"
+                    android:id="@+id/img_btn_activity_video_share"
+                    android:layout_weight="1"
+                    android:background="@color/sdGray" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_follow"
+                    android:id="@+id/img_btn_activity_video_collections"
+                    android:layout_weight="1"
+                    android:background="@color/sdGray" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_follow"
+                    android:layout_weight="1"
+                    android:background="@color/sdGray" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_follow"
+                    android:layout_weight="1"
+                    android:background="@color/sdGray" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_collections"
+                android:id="@+id/tv_activity_video_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_collections"
+                android:id="@+id/tv_activity_video_site" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_collections"
+                android:id="@+id/tv_activity_video_start_at"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_collections"
+                android:id="@+id/tv_activity_video_community_name"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_collections"
+                android:id="@+id/tv_activity_video_school"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

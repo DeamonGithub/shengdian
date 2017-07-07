@@ -6,6 +6,7 @@ var Activity = require("../models").activity;
 var User = require("../models").user;
 var Joi = require("joi");
 var Code = require("../models").code;
+var Video = require("../models").video;
 var fs = require("fs");
 
 //获取社团信息
@@ -474,6 +475,46 @@ var getActivitiesCount = function(req, res, next){
 
 };
 
+var getVideoList = function(req, res, next){
+    console.log("#######");
+    console.log("community getVideoList");
+    var schema = Joi.object().keys({
+        cid:Joi.string().length(24).required()
+    });
+    Joi.validate(req.params, schema, function(err, value){
+        if(err){
+            console.error(err);
+            sendError(406, res, next, "getActivitiesCount", "value fails to match the pattern");
+            return next();
+        }
+        Video.model.find({cid: value.cid}, function(err, list){
+            if(err){
+                console.error(err);
+                sendError(406, res, next, "getActivitiesCount", "can not get total count of activities");
+                return next();
+            }
+            var data = [];
+            for(var i = 0; i<list.length; i++){
+                var item = {};
+                item.vid = list[i]._id;
+                item.title = list[i].title;
+                item.path = list[i].path;
+                item.cid = list[i].cid;
+                item.site = list[i].site;
+                item.detail = list[i].detail;
+                item.start_at = list[i].start_at;
+                item.illustration = list[i].illustration;
+                data.push(item);
+            }
+            sendData(200, res, next, data)
+        });
+    });
+
+
+};
+
+
+
 
 var sendError = function(code, res, next, name, meg) {
     res.charSet('utf-8');
@@ -496,5 +537,6 @@ module.exports = {
     validateCode: validateCode,
     register: register,
     uploadPicture: uploadPicture,
-    getActivitiesCount: getActivitiesCount
+    getActivitiesCount: getActivitiesCount,
+    getVideoList: getVideoList
 };

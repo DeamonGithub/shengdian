@@ -11,4 +11,5 @@ module.exports = function(server) {
     server.post({path: "/api/community/signup"}, Community.register);
     server.post({path: "/api/community/avatar"}, Community.uploadPicture);
     server.get({path: "/api/community/activities/count"}, Community.getActivitiesCount);
+    server.post({path: "api/community/video/list"}, Community.getVideoList);
 };

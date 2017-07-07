@@ -16,6 +16,7 @@ import com.dae.ecupl.shengdian.engines.Engine;
 import com.dae.ecupl.shengdian.fragment.CmuActFragment;
 import com.dae.ecupl.shengdian.fragment.CmuMainFragment;
 import com.dae.ecupl.shengdian.fragment.CmuMemFragment;
+import com.dae.ecupl.shengdian.fragment.CmuVideoFragment;
 import com.dae.ecupl.shengdian.models.CmuInfo;
 import com.dae.ecupl.shengdian.models.EventModel;
 
@@ -45,7 +46,6 @@ public class CommunityActivity extends AppCompatActivity {
         mEngine = App.getInstance().getEngine();
         cid = this.getIntent().getExtras().getString("cid");
 
-        //loadContentData();
         initView();
     }
 
@@ -59,41 +59,15 @@ public class CommunityActivity extends AppCompatActivity {
         viewPagerAdapter.addFragment(CmuMainFragment.newInstance(), "主页");//添加Fragment
         viewPagerAdapter.addFragment(CmuActFragment.newInstance(), "举办活动");
         viewPagerAdapter.addFragment(CmuMemFragment.newInstance(), "成员");
+        viewPagerAdapter.addFragment(CmuVideoFragment.newInstance(), "活动视频");
         mViewPager.setAdapter(viewPagerAdapter);//设置适配器
 
         TabLayout mTabLayout = (TabLayout) findViewById(R.id.tabLayout_community);
         mTabLayout.addTab(mTabLayout.newTab());//给TabLayout添加Tab
         mTabLayout.addTab(mTabLayout.newTab());
         mTabLayout.addTab(mTabLayout.newTab());
+        mTabLayout.addTab(mTabLayout.newTab());
         mTabLayout.setupWithViewPager(mViewPager);//给TabLayout设置关联ViewPager，如果设置了ViewPager，那么ViewPagerAdapter中的getPageTitle()方法返回的就是Tab上的标题
 
     }
-
-    /**
-     * 加载内容列表数据
-     */
-    /*private void loadContentData() {
-        Log.d(TAG, "loadContentData: called");
-        mEngine.loadCommunityInfo(cid).enqueue(new Callback<List<CmuInfo>>() {
-            @Override
-            public void onResponse(Call<List<CmuInfo>> call, Response<List<CmuInfo>> response) {
-                List<CmuInfo> list = response.body();
-                info = list.get(0);
-                Log.d(TAG, "onResponse: info->"+info);
-                members = info.members;
-                events = info.activities;
-                Log.d(TAG, "onResponse: members"+members.toString());
-                Log.d(TAG, "onResponse: events"+events.toString());
-            }
-
-            @Override
-            public void onFailure(Call<List<CmuInfo>> call, Throwable t) {
-                Log.d(TAG, "onFailure: load data failure!");
-                Toast.makeText(App.getInstance(), "加载内容数据失败", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }*/
-
-
-
 }

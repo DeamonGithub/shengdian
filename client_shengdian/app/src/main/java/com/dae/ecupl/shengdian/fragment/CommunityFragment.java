@@ -115,8 +115,10 @@ public class CommunityFragment extends Fragment {
                 Log.d(TAG, "onResponse: response->" + response.raw());
                 Log.d(TAG, "onResponse: error->" + response.errorBody());
                 List<CmuList> list = response.body();
-                for(CmuList r : list){
-                    cidArray.add(r.cid);
+                if(list != null){
+                    for(CmuList r : list){
+                        cidArray.add(r.cid);
+                    }
                 }
                 mContentAdapter.setData(response.body());
             }

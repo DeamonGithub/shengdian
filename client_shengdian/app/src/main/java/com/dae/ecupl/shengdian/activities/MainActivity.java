@@ -1,5 +1,7 @@
 package com.dae.ecupl.shengdian.activities;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -8,6 +10,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -20,6 +23,7 @@ import com.dae.ecupl.shengdian.engines.Engine;
 import com.dae.ecupl.shengdian.fragment.CommunityFragment;
 import com.dae.ecupl.shengdian.fragment.EventFragment;
 import com.dae.ecupl.shengdian.fragment.TidingsFragment;
+import com.dae.ecupl.shengdian.models.Video;
 
 import cn.bingoogolapple.bgabanner.BGABanner;
 
@@ -31,14 +35,26 @@ public class MainActivity extends AppCompatActivity
     private BGABanner mBanner;
 
     private Engine mEngine;
+    private Boolean status = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        SharedPreferences sharedPreferences = getSharedPreferences("cookie", CONTEXT_IGNORE_SECURITY);
+//        status = sharedPreferences.getBoolean("status", false);
 
         Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        mToolbar.setTitleTextColor(Color.WHITE);//设置ToolBar的titl颜色
+        mToolbar.setTitleTextColor(Color.WHITE);//
+        if(status){
+            mToolbar.setNavigationIcon(R.drawable.ic_avatar_boy); //todo 获取头像并填充
+            mToolbar.setTitle("nickname");
+        }else {
+            mToolbar.setNavigationIcon(R.drawable.ic_avatar_boy);
+            mToolbar.setTitle("未登录");
+        }
+
+//10064847  12786991
         setSupportActionBar(mToolbar);
 
         Log.d(TAG, "onCreate: flag1");
@@ -100,17 +116,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        if (id == R.id.nav_user) {
+            Intent i = new Intent(MainActivity.this, VideoActivity.class);
+            startActivity(i);
+        } else if (id == R.id.nav_collection) {
 
         }
 
