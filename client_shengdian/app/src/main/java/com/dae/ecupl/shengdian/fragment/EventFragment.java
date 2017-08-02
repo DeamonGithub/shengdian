@@ -163,11 +163,13 @@ public class EventFragment extends Fragment implements SwipeRefreshLayout.OnRefr
      * 加载头部广告条的数据
      */
     private void loadBannerData() {
-        mEngine.fetchItemsWithItemCount(5).enqueue(new Callback<BannerModel>() {
+        mEngine.fetchItemsWithItemCount().enqueue(new Callback<BannerModel>() {
             @Override
             public void onResponse(Call<BannerModel> call, Response<BannerModel> response) {
                 BannerModel bannerModel = response.body();
-                mBanner.setData(bannerModel.imgs, bannerModel.tips);
+                if(bannerModel != null){
+                    mBanner.setData(bannerModel.imgs, bannerModel.tips);
+                }
             }
 
             @Override
@@ -238,15 +240,15 @@ public class EventFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     private class ContentAdapter extends BGARecyclerViewAdapter<EventModel> {
 
         public ContentAdapter(RecyclerView recyclerView) {
-            super(recyclerView, R.layout.item_normal);
+            super(recyclerView, R.layout.item_event);
         }
 
         @Override
         protected void fillData(BGAViewHolderHelper helper, int position, EventModel model) {
-            helper.setText(R.id.tv_item_normal_title, model.title).setText(R.id.tv_item_normal_detail, model.site);
+            helper.setText(R.id.tv_event_title, model.title);
             if(model.illustration != null){
-                Uri uri = Uri.parse(model.illustration);
-                SimpleDraweeView draweeView = helper.getView(R.id.iv_event_illustration);
+                Uri uri = Uri.parse("http://106.14.250.168/"+model.illustration);
+                SimpleDraweeView draweeView = helper.getView(R.id.sdv_event_ilt);
                 draweeView.setImageURI(uri);
             }
         }

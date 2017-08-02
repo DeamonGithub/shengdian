@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/banner_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:banner_pageChangeDuration="1000"
+            app:banner_pointAutoPlayAble="false"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+            app:banner_pointTopBottomMargin="15dp"
+            app:banner_transitionEffect="alpha" />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="    热门活动"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_avatar_boy"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_hot_fir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                fresco:placeholderImage="@drawable/my_drawable"
+                />
+            <view
+                android:layout_width="8dp"
+                class="android.support.v4.widget.Space"
+                android:layout_height="match_parent" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_hot_sec"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                fresco:placeholderImage="@drawable/my_drawable"
+                />
+            <view
+                android:layout_width="8dp"
+                class="android.support.v4.widget.Space"
+                android:layout_height="match_parent" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_hot_thi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                fresco:placeholderImage="@drawable/my_drawable"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="    精选推荐"
+            android:ems="10"
+            android:drawableLeft="@drawable/ic_avatar_boy"
+            />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_recommend_fir"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            fresco:placeholderImage="@drawable/loading_sec"
+            />
+        <view
+            android:layout_width="match_parent"
+            class="android.support.v4.widget.Space"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_recommend_sec"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                fresco:placeholderImage="@drawable/my_drawable"
+                />
+            <view
+                android:layout_width="8dp"
+                class="android.support.v4.widget.Space"
+                android:layout_height="match_parent" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_recommend_thi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                fresco:placeholderImage="@drawable/my_drawable"
+                />
+            <view
+                android:layout_width="8dp"
+                class="android.support.v4.widget.Space"
+                android:layout_height="match_parent" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_recommend_fou"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                fresco:placeholderImage="@drawable/my_drawable"
+                />
+        </LinearLayout>
+        <view
+            android:layout_width="match_parent"
+            class="android.support.v4.widget.Space"
+            android:layout_height="8dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看更多"
+            android:ems="5"
+            android:textColor="#88d5f9"
+            android:elevation="1dp"
+            android:inputType="text"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+</ScrollView>

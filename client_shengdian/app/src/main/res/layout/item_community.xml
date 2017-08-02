@@ -14,7 +14,7 @@
         android:layout_height="match_parent">
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/sdv_community_item"
-            android:layout_width="130dp"
+            android:layout_width="match_parent"
             android:layout_height="130dp"
             fresco:placeholderImage="@drawable/my_drawable"
              />
@@ -22,6 +22,7 @@
             android:id="@+id/tv_community_name"
             android:layout_height="20dp"
             android:layout_width="match_parent"
+            android:gravity="center"
             />
 
     </LinearLayout>
