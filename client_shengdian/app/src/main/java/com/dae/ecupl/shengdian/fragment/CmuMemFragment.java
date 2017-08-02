@@ -88,7 +88,7 @@ public class CmuMemFragment extends Fragment{
 //        layoutManager = new LinearLayoutManager(this);
 
         // 测试 GridLayoutManager 的情况
-        layoutManager = new GridLayoutManager(getActivity(), 2);
+        layoutManager = new GridLayoutManager(getActivity(), 4);
 
         mContentRv.setLayoutManager(layoutManager);
 

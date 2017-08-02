@@ -8,19 +8,24 @@
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppBlueTheme">
-
-        <activity android:name="com.dae.ecupl.shengdian.activities.MainActivity" >
+        <activity
+            android:name=".activities.GuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Splash">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name="com.dae.ecupl.shengdian.activities.MainActivity"
+            android:screenOrientation="portrait">
         </activity>
         <activity android:name=".activities.EventDetailActivity"/>
         <activity android:name=".activities.CommunityActivity" />
         <activity android:name=".activities.VideoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"/>
-
-
 
     </application>
 

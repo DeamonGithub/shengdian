@@ -7,7 +7,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        app:srcCompat="@drawable/p1"
+        app:srcCompat="@drawable/fayuanbanner"
         android:id="@+id/img_cmu_main" />
 
     <LinearLayout

@@ -1,7 +1,6 @@
 package com.dae.ecupl.shengdian.activities;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -10,7 +9,6 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -22,8 +20,7 @@ import com.dae.ecupl.shengdian.adapter.HomePagerAdapter;
 import com.dae.ecupl.shengdian.engines.Engine;
 import com.dae.ecupl.shengdian.fragment.CommunityFragment;
 import com.dae.ecupl.shengdian.fragment.EventFragment;
-import com.dae.ecupl.shengdian.fragment.TidingsFragment;
-import com.dae.ecupl.shengdian.models.Video;
+import com.dae.ecupl.shengdian.fragment.HomeFragment;
 
 import cn.bingoogolapple.bgabanner.BGABanner;
 
@@ -60,9 +57,9 @@ public class MainActivity extends AppCompatActivity
         Log.d(TAG, "onCreate: flag1");
         ViewPager mViewPager = (ViewPager) findViewById(R.id.viewpager);
         HomePagerAdapter viewPagerAdapter = new HomePagerAdapter(getSupportFragmentManager());
-        viewPagerAdapter.addFragment(EventFragment.newInstance(), "Activities");
-        viewPagerAdapter.addFragment(CommunityFragment.newInstance(), "Communities");//添加Fragment
-        viewPagerAdapter.addFragment(TidingsFragment.newInstance(), "Tidings");
+        viewPagerAdapter.addFragment(EventFragment.newInstance(), "活动");
+        viewPagerAdapter.addFragment(CommunityFragment.newInstance(), "社团");//添加Fragment
+        viewPagerAdapter.addFragment(HomeFragment.newInstance(), "推荐");
         mViewPager.setAdapter(viewPagerAdapter);//设置适配器
 
         TabLayout mTabLayout = (TabLayout) findViewById(R.id.tabLayout);

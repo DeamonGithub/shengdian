@@ -4,24 +4,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fresco="http://schemas.android.com/tools"
 
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    app:cardCornerRadius="20dp">
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:layout_collapseParallaxMultiplier="1.0"
+    android:layout_width="50dp"
+    android:layout_height="60dp">
 
     <LinearLayout
         android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/sdv_user_avatar"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="match_parent"
             fresco:placeholderImage="@drawable/my_drawable"
-            />
+            android:layout_height="match_parent" />
+
         <TextView
             android:id="@+id/tv_user_name"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
+            android:gravity="center"
             />
 
     </LinearLayout>

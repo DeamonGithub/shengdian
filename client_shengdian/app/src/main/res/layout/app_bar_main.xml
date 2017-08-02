@@ -16,19 +16,18 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#fac091"
+            android:background="@drawable/side_main_bar"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:layout_scrollFlags="scroll|enterAlways"
-            android:minHeight="95dp"
+            android:minHeight="52dp"
             android:elevation="5dp"
-            />
+            android:layout_height="100dp" />
         #fac091
         <android.support.design.widget.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fac091"
+            android:background="@drawable/side_main_bar"
             app:tabGravity="fill"
             app:tabMode="fixed"
             app:tabSelectedTextColor="#ff0000"

@@ -30,8 +30,8 @@ import retrofit2.http.Url;
  */
 public interface Engine {
 
-    @GET("http://7xk9dj.com1.z0.glb.clouddn.com/banner/api/{itemCount}item.json")
-    Call<BannerModel> fetchItemsWithItemCount(@Path("itemCount") int itemCount);
+    @GET("http://106.14.250.168/api/adlist")
+    Call<BannerModel> fetchItemsWithItemCount();
 
     @GET
     Call<List<EventModel>> loadContentData(@Url String url);
