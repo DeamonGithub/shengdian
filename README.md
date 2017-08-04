@@ -4,7 +4,7 @@
 ---
 
 本项目为android客户端，开发环境为android studio
-服务端用node.js实现，具体详见：
+服务端用node.js实现，具体详见：[盛典后端](https://github.com/taojunyu/node_shengdian)
 
 客户端效果图如下：<br />
 ![decription](/img/g_a.gif)<br />
