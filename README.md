@@ -7,7 +7,7 @@
 服务端用node.js实现，具体详见：
 
 客户端效果图如下：
-![decription](http://taojunyu.com/img/img_a.png)
+<img src="http://taojunyu.com/img/img_a.png"  height="330" width="495">
 ![decription](/img/g_a.gif)
 ![decription](http://taojunyu.com/img/g_b.gif)
 ![decription](http://taojunyu.com/img/g_c.gif)
