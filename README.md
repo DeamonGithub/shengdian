@@ -7,10 +7,10 @@
 服务端用node.js实现，具体详见：
 
 客户端效果图如下：
+![decription](/img/d_a.gif)<br />
+![decription](/img/d_b.gif)<br />
+![decription](/img/d_c.gif)<br />
 <img src="http://taojunyu.com/img/img_a.png"  height="500" width="300">
-![decription](/img/g_a.gif)
-![decription](http://taojunyu.com/img/g_b.gif)
-![decription](http://taojunyu.com/img/g_c.gif)
 
 客户端使用Material Design风格，尽可能提供更友好的UI界面<br />
 用户通过网页端的wangEditor.js对活动进行排版并提交到服务器，android端活动详情通过webview加载后端返回页面。<br />
