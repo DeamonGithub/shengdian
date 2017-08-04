@@ -34,6 +34,7 @@ import retrofit2.Response;
 
 /**
  * Created by ASUS on 2017/4/26.
+ * 首页社团
  */
 
 public class CommunityFragment extends Fragment {

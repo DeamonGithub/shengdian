@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 /**
  * Created by ASUS on 2017/7/4.
+ * 存储cookie
  */
 
 public class CookieStore {

@@ -15,21 +15,20 @@ import com.facebook.drawee.view.SimpleDraweeView;
  * Created by ASUS on 2017/4/26.
  */
 
-public class HomeFragment extends Fragment {
+public class TipsFragment extends Fragment {
     private Engine mEngine;
     private View mHotFir;
     private SimpleDraweeView mHotSec;
     private SimpleDraweeView mHotThi;
 
-    public static HomeFragment newInstance() {
-        HomeFragment fragment = new HomeFragment();
+    public static TipsFragment newInstance() {
+        TipsFragment fragment = new TipsFragment();
         return fragment;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
-        /*initBase();*/
         mEngine = App.getInstance().getEngine();
 
         return v;

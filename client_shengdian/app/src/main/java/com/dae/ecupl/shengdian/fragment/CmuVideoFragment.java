@@ -35,6 +35,7 @@ import retrofit2.Response;
 
 /**
  * Created by ASUS on 2017/7/5.
+ * 社团视频页
  */
 
 public class CmuVideoFragment extends Fragment{

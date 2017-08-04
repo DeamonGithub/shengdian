@@ -36,8 +36,9 @@ import retrofit2.Response;
 
 /**
  * Created by ASUS on 2017/6/22.
+ * 社团成员页
  */
-//社团成员页
+
 public class CmuMemFragment extends Fragment{
     private static final String TAG = "CmuMemFragment";
     private RecyclerView mContentRv;

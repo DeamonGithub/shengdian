@@ -31,7 +31,9 @@ import com.dae.ecupl.shengdian.R;
 /**
  * Created by ASUS on 2017/7/5.
  */
-
+/**
+ * 因为受服务器带宽的影响，播放视频有卡顿现象，未能优化暂未实装
+ * */
 public class VideoActivity extends AppCompatActivity{
     private static final String TAG = "VideoActivity";
     private String mVideoPath = "http://106.14.250.168/jinan.mp4";

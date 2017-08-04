@@ -26,7 +26,7 @@ import retrofit2.http.Url;
 /**
  * 作者:陶俊宇 邮件:1490802761@qq.com
  * 创建时间:17/4/8 下午12:44
- * 描述:
+ * 描述: 处理网络连接部分
  */
 public interface Engine {
 
@@ -41,9 +41,6 @@ public interface Engine {
 
     @GET("/api/community/info")
     Call<List<CmuInfo>> loadCommunityInfo(@Query("cid") String cid);
-
-    @GET("")
-    Call<BannerModel> bannerData();
 
     @POST("api/user/login")
     Call<Auth> loginAuth(@Field("name") String name, @Field("password") String password);
