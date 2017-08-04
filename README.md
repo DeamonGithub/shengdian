@@ -8,7 +8,7 @@
 
 客户端效果图如下：
 ![decription](http://taojunyu.com/img/img_a.png)
-![decription](http://taojunyu.com/img/g_a.gif)
+![decription](/img/g_a.gif)
 ![decription](http://taojunyu.com/img/g_b.gif)
 ![decription](http://taojunyu.com/img/g_c.gif)
 
