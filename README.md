@@ -6,10 +6,10 @@
 本项目为android客户端，开发环境为android studio
 服务端用node.js实现，具体详见：
 
-客户端效果图如下：
-![decription](/img/d_a.gif)<br />
-![decription](/img/d_b.gif)<br />
-![decription](/img/d_c.gif)<br />
+客户端效果图如下：<br />
+![decription](/img/g_a.gif)<br />
+![decription](/img/g_b.gif)<br />
+![decription](/img/g_c.gif)<br />
 <img src="http://taojunyu.com/img/img_a.png"  height="500" width="300">
 
 客户端使用Material Design风格，尽可能提供更友好的UI界面<br />
