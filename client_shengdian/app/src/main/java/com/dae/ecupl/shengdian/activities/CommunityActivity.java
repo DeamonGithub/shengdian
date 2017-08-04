@@ -36,8 +36,6 @@ public class CommunityActivity extends AppCompatActivity {
     private Engine mEngine;
     private String cid;
     public CmuInfo info;
-    public List members;
-    public List<EventModel> events;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

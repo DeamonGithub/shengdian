@@ -22,6 +22,7 @@ public class EventDetailActivity extends AppCompatActivity {
         WebView webView = (WebView) findViewById(R.id.webv_event_detial);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
+        //加载页面
         webView.loadUrl("http://106.14.250.168/tdetail.html?aid=" + aid);
 
     }

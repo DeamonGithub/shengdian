@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * Created by ASUS on 2017/4/26.
+ * 主页适配器
  */
 
 public class HomePagerAdapter extends FragmentPagerAdapter {

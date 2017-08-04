@@ -23,8 +23,9 @@ import retrofit2.Response;
 
 /**
  * Created by ASUS on 2017/6/22.
+ * 社团主页
  */
-//社团主页
+
 public class CmuMainFragment extends Fragment {
     private static final String TAG = "CmuMainFragment";
     private String cid;
@@ -62,7 +63,6 @@ public class CmuMainFragment extends Fragment {
 
 
     private void loadContentData() {
-        Log.d(TAG, "loadContentData: called");
         mEngine.loadCommunityInfo(cid).enqueue(new Callback<List<CmuInfo>>() {
             @Override
             public void onResponse(Call<List<CmuInfo>> call, Response<List<CmuInfo>> response) {

@@ -26,12 +26,9 @@ public class App extends Application {
         super.onCreate();
 
         sInstance = this;
-        /*mEngine = new Retrofit.Builder()
-                .baseUrl("http://7xk9dj.com1.z0.glb.clouddn.com/banner/api/") //主站域名
-                .addConverterFactory(GsonConverterFactory.create()) //
-                .build().create(Engine.class);*/
+
         mEngine = new Retrofit.Builder()
-                .baseUrl("http://106.14.250.168") //主站域名
+                .baseUrl("http://106.14.250.168") //todo 设置主站域名
                 .addConverterFactory(GsonConverterFactory.create()) //
                 .build().create(Engine.class);
         Fresco.initialize(this);

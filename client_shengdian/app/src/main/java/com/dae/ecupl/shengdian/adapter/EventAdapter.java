@@ -6,6 +6,10 @@ import android.view.ViewGroup;
 /**
  * Created by ASUS on 2017/4/26.
  */
+/**
+ * 活动适配器
+ *
+ */
 
 public class EventAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     @Override

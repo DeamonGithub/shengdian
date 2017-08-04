@@ -11,7 +11,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -20,7 +19,7 @@ import com.dae.ecupl.shengdian.adapter.HomePagerAdapter;
 import com.dae.ecupl.shengdian.engines.Engine;
 import com.dae.ecupl.shengdian.fragment.CommunityFragment;
 import com.dae.ecupl.shengdian.fragment.EventFragment;
-import com.dae.ecupl.shengdian.fragment.HomeFragment;
+import com.dae.ecupl.shengdian.fragment.TipsFragment;
 
 import cn.bingoogolapple.bgabanner.BGABanner;
 
@@ -38,28 +37,25 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        SharedPreferences sharedPreferences = getSharedPreferences("cookie", CONTEXT_IGNORE_SECURITY);
-//        status = sharedPreferences.getBoolean("status", false);
+
 
         Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
         mToolbar.setTitleTextColor(Color.WHITE);//
         if(status){
-            mToolbar.setNavigationIcon(R.drawable.ic_avatar_boy); //todo 获取头像并填充
+            mToolbar.setNavigationIcon(R.drawable.ic_avatar_boy);
             mToolbar.setTitle("nickname");
         }else {
             mToolbar.setNavigationIcon(R.drawable.ic_avatar_boy);
             mToolbar.setTitle("未登录");
         }
 
-//10064847  12786991
         setSupportActionBar(mToolbar);
 
-        Log.d(TAG, "onCreate: flag1");
         ViewPager mViewPager = (ViewPager) findViewById(R.id.viewpager);
         HomePagerAdapter viewPagerAdapter = new HomePagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragment(EventFragment.newInstance(), "活动");
         viewPagerAdapter.addFragment(CommunityFragment.newInstance(), "社团");//添加Fragment
-        viewPagerAdapter.addFragment(HomeFragment.newInstance(), "推荐");
+        viewPagerAdapter.addFragment(TipsFragment.newInstance(), "推荐");
         mViewPager.setAdapter(viewPagerAdapter);//设置适配器
 
         TabLayout mTabLayout = (TabLayout) findViewById(R.id.tabLayout);
@@ -111,6 +107,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+        // TODO: 2017/8/1  后续添加模块
         int id = item.getItemId();
 
         if (id == R.id.nav_user) {

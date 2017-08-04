@@ -39,6 +39,7 @@ import retrofit2.Response;
 
 /**
  * Created by ASUS on 2017/4/26.
+ * 首页活动页
  */
 
 public class EventFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener,
@@ -61,7 +62,6 @@ public class EventFragment extends Fragment implements SwipeRefreshLayout.OnRefr
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_event, container, false);
-        /*initBase();*/
         mContentRv = (RecyclerView) v.findViewById(R.id.event_recyclerView);
         mEngine = App.getInstance().getEngine();
         initRecyclerView();
@@ -71,24 +71,6 @@ public class EventFragment extends Fragment implements SwipeRefreshLayout.OnRefr
         return v;
     }
 
-    /*private void initBase(){
-        lay_fresh = (SwipeRefreshLayout) this.v.findViewById(R.id.lay_refresh);
-        lay_fresh.setColorSchemeResources(R.color.colorPrimary, R.color.colorPrimaryDark);
-        lay_fresh.setOnRefreshListener(this);
-
-        RecyclerView recyclerView = (RecyclerView) this.v.findViewById(R.id.event_recyclerView);
-    }
-
-    @Override
-    public void onRefresh() {
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                lay_fresh.setRefreshing(false);
-                //adapter.notifyDataSetChanged();
-            }
-        }, 1000);
-    }*/
 
     /**
      * 初始化RecyclerView

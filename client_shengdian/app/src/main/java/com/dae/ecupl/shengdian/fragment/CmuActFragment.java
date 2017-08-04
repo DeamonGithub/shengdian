@@ -36,8 +36,9 @@ import retrofit2.Response;
 
 /**
  * Created by ASUS on 2017/6/22.
+ * 社团活动页
  */
-//社团活动页
+
 public class CmuActFragment extends Fragment{
     private static final String TAG = "CmuActFragment";
     private RecyclerView mContentRv;
@@ -87,9 +88,6 @@ public class CmuActFragment extends Fragment{
 
         RecyclerView.LayoutManager layoutManager;
 
-        // 测试 LinearLayoutManager 的情况
-//        layoutManager = new LinearLayoutManager(this);
-
         // 测试 GridLayoutManager 的情况
         layoutManager = new GridLayoutManager(getActivity(), 2);
 
@@ -100,7 +98,7 @@ public class CmuActFragment extends Fragment{
             @Override
             public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
                 int position = parent.getChildAdapterPosition(view);
-                // 注意：由于加了一个  ，所以是大于 0 时才加分隔间隙。onCanvas 就不演示了
+
                 if (position > 0) {
                     int halfPadding = BGABannerUtil.dp2px(view.getContext(), 4);
                     outRect.set(halfPadding, halfPadding, halfPadding, halfPadding);
@@ -113,7 +111,6 @@ public class CmuActFragment extends Fragment{
     }
 
     private void loadContentData() {
-        Log.d(TAG, "loadContentData: called");
         mEngine.loadCommunityInfo(cid).enqueue(new Callback<List<CmuInfo>>() {
             @Override
             public void onResponse(Call<List<CmuInfo>> call, Response<List<CmuInfo>> response) {
@@ -121,7 +118,6 @@ public class CmuActFragment extends Fragment{
                 info = list.get(0);
                 Log.d(TAG, "onResponse: info->"+info);
                 events = info.activities;
-                Log.d(TAG, "onResponse: events"+events.toString());
                 if (events != null){
                     for (EventModel e : events){
                         aidArray.add(e.aid);
@@ -149,6 +145,7 @@ public class CmuActFragment extends Fragment{
         protected void fillData(BGAViewHolderHelper helper, int position, EventModel model) {
             helper.setText(R.id.tv_event_title, model.title);
             if(model.illustration != null){
+                //取出图片地址并加载
                 Uri uri = Uri.parse("http://106.14.250.168/"+model.illustration);
                 Log.d(TAG, "fillData: "+"http://106.14.250.168/"+model.illustration);
                 SimpleDraweeView draweeView = helper.getView(R.id.sdv_event_ilt);
