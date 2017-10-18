@@ -9,7 +9,7 @@
 客户端效果图如下：<br />
 ![decription](/img/g_a.gif)
 ![decription](/img/g_b.gif)<br />
-![decription](/img/g_c.gif)<br />
+![decription](/img/g_c.gif)
 <img src="http://taojunyu.com/img/img_a.png"  height="500" width="300">
 
 客户端使用Material Design风格，尽可能提供更友好的UI界面<br />
