@@ -7,7 +7,7 @@
 服务端用node.js实现，具体详见：[盛典后端](https://github.com/taojunyu/node_shengdian)
 
 客户端效果图如下：<br />
-![decription](/img/g_a.gif)<br />
+![decription](/img/g_a.gif)
 ![decription](/img/g_b.gif)<br />
 ![decription](/img/g_c.gif)<br />
 <img src="http://taojunyu.com/img/img_a.png"  height="500" width="300">
